@@ -33,5 +33,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ steps.login-ecr.outputs.registry }}/flask-app:latest
-            ${{ steps.login-ecr.outputs.registry }}/flask-app:${{ github.sha }}
+            ${{ steps.login-ecr.outputs.registry }}/yk-flask-repo:latest
+            ${{ steps.login-ecr.outputs.registry }}/yk-flask-repo:${{ github.sha }}
